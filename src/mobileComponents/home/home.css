@@ -1,0 +1,17 @@
+/* home.css */
+.app-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: first baseline;
+  /* You can adjust this to change the horizontal spacing */
+  align-content: first baseline;
+  /* You can adjust this to change the vertical spacing */
+  padding: 10px;
+  /*Add some padding to the app menu*/
+}
+
+.app-menu>* {
+  flex: 0 0 calc(33.33% - 20px);
+  /* Adjust the width and spacing as needed */
+  margin: 10px;
+}

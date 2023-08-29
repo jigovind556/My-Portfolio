@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import styled, { ThemeProvider } from 'styled-components';
+import ThemeContext from './ThemeContext';
+import { defaultTheme } from './themeColors';
+import Left from './component/main/left';
+import Center from './component/main/center';
+import Right from './component/main/right';
+import './index.css';
 
 function App() {
+  const [theme, setTheme] = useState(defaultTheme);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <ThemeContext.Provider value={{ theme, setTheme }}>
+        <AppContainer className="main-page">
+          <Left />
+          <Center theme={theme}/>
+          <Right theme={theme} setTheme={setTheme} />
+        </AppContainer>
+      </ThemeContext.Provider>
+    </ThemeProvider>
   );
 }
+
+const AppContainer = styled.div`
+  background: linear-gradient(
+    to right,
+    ${props => props.theme.primary},
+    ${props => props.theme.secondary}
+  );
+  /* Other global styles */
+`;
 
 export default App;

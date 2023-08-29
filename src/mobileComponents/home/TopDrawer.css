@@ -1,0 +1,48 @@
+/* TopDrawer.css */
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.top-drawer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3); /* Black background for Android-like appearance */
+    color: white;
+    padding: 3px 12px 0px; /* Padding for top, right, and left */
+  }
+
+.left-section,
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.time,
+.network,
+.battery-percent {
+  margin-right: 10px;
+  font-size: 1.4vh; /* Adjust font size for consistency */
+}
+
+.battery-icon {
+  display: flex;
+  align-items: center;
+}
+
+.battery-icon i {
+  font-size: 1.2vh;
+  margin-right: 5px;
+}
+
+.battery-percent {
+  font-size: 1.23vh;
+}
+.camera-icon {
+    width: 1.3rem; /* Adjust the width */
+    height: 1.3rem; /* Adjust the height */
+    margin-right: 10px; /* Add some spacing */
+  }

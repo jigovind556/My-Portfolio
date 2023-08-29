@@ -1,0 +1,136 @@
+/* AppDetailsModal.css */
+.app-details-modal {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  font-family: Arial, sans-serif; /* Use a font similar to Android */
+  transition: color 0.3s, background-color 0.3s;
+  overflow: hidden;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 10px;
+  color: #000; /* Font color similar to Android */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.top-bar.scrolled {
+  background-color: rgba(0, 0, 0, 0.1); /* Change to your desired color */
+}
+
+.application-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.cut-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #555; /* Font color similar to Android */
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.cut-button:hover {
+  color: #ff0000; /* Change the color on hover */
+  background-color: rgba(0, 0, 0, 0.1); /* Add a background color on hover */
+}
+
+.padding-s{
+  padding: 5px;
+}
+
+.app-content {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  color: #333; /* Font color similar to Android */
+}
+
+.app-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.app-content p {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.4; /* Adjust line height for readability */
+}
+
+
+.theme-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.theme-toggle img {
+  width: 20px;
+  height: 20px;
+}
+
+/* ... Other styles ... */
+
+.light {
+  --background-color: #fff;
+  /* Light theme background color */
+  --text-color: #000;
+  /* Light theme text color */
+  --icon-color: #000;
+  /* Light theme icon color */
+}
+
+.dark {
+  --background-color: #333;
+  /* Dark theme background color */
+  --text-color: #fff;
+  /* Dark theme text color */
+  --icon-color: #fff;
+  /* Dark theme icon color */
+}
+
+/* Apply theme colors based on the current theme state */
+.app-details-modal.light {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.app-details-modal.dark {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.theme-toggle i {
+  font-size: 20px;
+  color: var(--icon-color);
+}

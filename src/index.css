@@ -1,13 +1,63 @@
-body {
+/* Reset default margin and padding for the whole page */
+body, html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Set the viewport to the device width and initial scale */
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+
+/* Style for the mobile screen container */
+.main-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: #198d49;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+
+
+/* Style for project details container */
+.project-details {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden; /* Prevent content overflow */
+  transform: translateX(100%); /* Off-screen initially */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Style for close button */
+.close-button {
+  margin-top: 20px;
+  color: #e74c3c;
+  cursor: pointer;
+}
+
+/* Style for project content */
+.project-content {
+  margin: 20px;
+  max-width: 80%;
+}
+
+
+.square-div {
+  width: 15vw; /* 20% of the viewport width */
+  height: 10vw; /* Make it square */
+  margin: 2vw;
+  background-color: rgba(255, 255, 255, 0.3); /* Transparent white */
+  border-radius: 10px; /* Ro15ded corners */
+  border: #333; /* Border */
 }
