@@ -48,15 +48,21 @@ const AppDetailsModal = ({ appData, onClose }) => {
           )}
         </div>
         <div className="application-name">{appData.appName}</div>
+        {appData.type === 'web' && appData.src && (
+          <a href={appData.src} target='blank'><div className="external-link-icon" >
+            <i className="fas fa-external-link-alt"></i>
+          </div></a>
+        )}
         <div className="action-buttons">
+
           <button className="cut-button" onClick={onClose}>
             <i className="fas fa-times"></i>
           </button>
         </div>
       </div>
-      <div className="app-content padding-s" ref={appContentRef}>
+      <div className="app-content " ref={appContentRef}>
         <Suspense fallback={<div>Loading...</div>}>
-          <DynamicComponent />
+          <DynamicComponent appData={appData}/>
         </Suspense>
         {/* Additional app details */}
       </div>

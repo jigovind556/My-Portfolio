@@ -4,8 +4,8 @@ export const appDataList = [
     appName: "Camera",
     icon: "camera-icon.png",
     description: "Capture photos and videos with this camera app.",
-    path:'camera/camera.jsx'
-    // route:<Home/>
+    path:'camera/camera.jsx',
+    type:'self',
     // ... other properties ...
   },
   {
@@ -13,24 +13,43 @@ export const appDataList = [
     icon: "about-me-icon.png",
     description:
       `This is about me. `,
-    path:'aboutMe/aboutMe.jsx'
-    // route:<Home/>,
+    path:'aboutMe/aboutMe.jsx',
+    type:'self',
     // ... other properties ...
   },
   {
     appName: "Messaging App",
     icon: "about-me-icon.png",
     description: "Send and receive messages with friends.",
-    path:'messages/message.jsx'
-    // route:<Home/>
+    path:'messages/message.jsx',
+    type:'self',
     // ... other properties ...
   },
   {
-    appName: "Camera",
-    icon: "camera-icon.png",
-    description: "Capture photos and videos with this camera app.",
-    path:'camera/camera.jsx'
-    // route:<Home/>
+    appName: "Github",
+    icon: "github-logo.png",
+    description: "My Github page.",
+    path:'webroute/webRoute.jsx',
+    type:'web',
+    src:'https://github.com/jigovind556/',
+    // ... other properties ...
+  },
+  {
+    appName: "Linkedin",
+    icon: "linkedin-logo.png",
+    description: "My Linkedin page.",
+    path:'webroute/webRoute.jsx',
+    type:'web',
+    src:'https://www.linkedin.com/in/govindji/',
+    // ... other properties ...
+  },
+  {
+    appName: "Leetcode",
+    icon: "leetCode-logo.png",
+    description: "My Leetcode page.",
+    path:'webroute/webRoute.jsx',
+    type:'web',
+    src:'https://leetcode.com/12113078/',
     // ... other properties ...
   },
   
