@@ -38,7 +38,7 @@ export const appDataList = [
     appName: "Linkedin",
     icon: "linkedin-logo.png",
     description: "My Linkedin page.",
-    path:'webroute/webRoute.jsx',
+    path:'linkedin/linkedinProfile.jsx',
     type:'web',
     src:'https://www.linkedin.com/in/govindji/',
     // ... other properties ...
@@ -50,6 +50,15 @@ export const appDataList = [
     path:'webroute/webRoute.jsx',
     type:'web',
     src:'https://leetcode.com/12113078/',
+    // ... other properties ...
+  },
+  {
+    appName: "Auto - Mate",
+    icon: "automate-logo.jpg",
+    description: "Auto mate project.",
+    path:'webroute/webRoute.jsx',
+    type:'web',
+    src:'https://jigovind556.github.io/Auto-Mate/',
     // ... other properties ...
   },
   

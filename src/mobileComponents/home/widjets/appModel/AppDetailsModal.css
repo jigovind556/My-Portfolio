@@ -20,7 +20,9 @@
   color: #000; /* Font color similar to Android */
   transition: background-color 0.3s ease-in-out;
 }
-
+.top-bar i{
+  color:#000;
+}
 .top-bar.scrolled {
   background-color: rgba(0, 0, 0, 0.1); /* Change to your desired color */
 }

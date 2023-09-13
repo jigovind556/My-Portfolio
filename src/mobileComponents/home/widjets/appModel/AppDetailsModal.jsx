@@ -50,7 +50,7 @@ const AppDetailsModal = ({ appData, onClose }) => {
         <div className="application-name">{appData.appName}</div>
         {appData.type === 'web' && appData.src && (
           <a href={appData.src} target='blank'><div className="external-link-icon" >
-            <i className="fas fa-external-link-alt"></i>
+            <i className="fas fa-external-link-alt" ></i>
           </div></a>
         )}
         <div className="action-buttons">
