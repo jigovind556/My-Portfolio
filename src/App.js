@@ -1,21 +1,22 @@
-import React, { useState } from 'react';
-import styled, { ThemeProvider } from 'styled-components';
-import ThemeContext from './ThemeContext';
-import { defaultTheme } from './themeColors';
-import Left from './component/main/left';
-import Center from './component/main/center';
-import Right from './component/main/right';
-import './index.css';
+import React, { useState } from "react";
+import styled, { ThemeProvider } from "styled-components";
+import ThemeContext from "./ThemeContext";
+import { defaultTheme } from "./themeColors";
+import Left from "./component/main/left";
+import Center from "./component/main/center";
+import Right from "./component/main/right";
+import "./index.css";
+import usePreventZoom from ".";
 
 function App() {
   const [theme, setTheme] = useState(defaultTheme);
-
+  usePreventZoom();
   return (
     <ThemeProvider theme={theme}>
       <ThemeContext.Provider value={{ theme, setTheme }}>
         <AppContainer className="main-page">
           <Left />
-          <Center theme={theme}/>
+          <Center theme={theme} />
           <Right theme={theme} setTheme={setTheme} />
         </AppContainer>
       </ThemeContext.Provider>
@@ -26,8 +27,8 @@ function App() {
 const AppContainer = styled.div`
   background: linear-gradient(
     to right,
-    ${props => props.theme.primary},
-    ${props => props.theme.secondary}
+    ${(props) => props.theme.primary},
+    ${(props) => props.theme.secondary}
   );
   /* Other global styles */
 `;

@@ -53,7 +53,7 @@ export const appDataList = [
     // ... other properties ...
   },
   {
-    appName: "Auto - Mate",
+    appName: "Auto-Mate",
     icon: "automate-logo.jpg",
     description: "Auto mate project.",
     path:'webroute/webRoute.jsx',

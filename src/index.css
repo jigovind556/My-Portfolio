@@ -1,4 +1,8 @@
 /* Reset default margin and padding for the whole page */
+:root {
+  touch-action: pan-x pan-y;
+  height: 100% 
+}
 body, html {
   margin: 0;
   padding: 0;

@@ -5,11 +5,14 @@ const AppDetailsModal = ({ appData, onClose }) => {
   const [theme, setTheme] = useState('light');
   const [scrolled, setScrolled] = useState(false);
   const appContentRef = useRef(null); // Create a ref for app-content div
+  
 
   const toggleTheme = () => {
     if (theme === 'light') setTheme('dark');
     else setTheme('light');
   };
+
+ 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,7 +65,7 @@ const AppDetailsModal = ({ appData, onClose }) => {
       </div>
       <div className="app-content " ref={appContentRef}>
         <Suspense fallback={<div>Loading...</div>}>
-          <DynamicComponent appData={appData}/>
+          <DynamicComponent appData={appData} />
         </Suspense>
         {/* Additional app details */}
       </div>
