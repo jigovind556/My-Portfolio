@@ -58,10 +58,29 @@ body, html {
 
 
 .square-div {
-  width: 15vw; /* 20% of the viewport width */
-  height: 10vw; /* Make it square */
+  width: 24vh; /* 20% of the viewport width */
+  height: 16vh; /* Make it square */
   margin: 2vw;
   background-color: rgba(255, 255, 255, 0.3); /* Transparent white */
   border-radius: 10px; /* Ro15ded corners */
   border: #333; /* Border */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .square-div {
+    width: 80px; /* Adjust the button width for small screens */
+    height: 80px; /* Make it square */
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer; /* Change cursor to indicate clickability */
+  }
+}
+
+.small-button {
+  width: 80px; /* Adjust the button width for small screens */
+  height: 80px; /* Make it square */
+  margin: 10px;
+  cursor: pointer; /* Change cursor to indicate clickability */
+  /* Other styles for the button appearance */
 }
