@@ -5,6 +5,17 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 function usePreventZoom(scrollCheck = true, keyboardCheck = true) {
+  function checkScreenWidthAndRedirect() {
+    if (window.innerWidth < 600) {
+      window.location.href = 'https://jigovind556.github.io/About-Me/'; // Replace with the URL you want to redirect to
+    }
+  }
+
+  // Call the function when the page loads
+  window.addEventListener('load', checkScreenWidthAndRedirect);
+
+  // Call the function on window resize to handle changes in screen width
+  window.addEventListener('resize', checkScreenWidthAndRedirect);
     useEffect(() => {
       const handleKeydown = (e) => {
         if (
