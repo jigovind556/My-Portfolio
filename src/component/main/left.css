@@ -1,0 +1,51 @@
+/* left.css */
+
+  /* Triangle button styles */
+  .l-triangle-button {
+    position: fixed;
+    left: 0; /* Opposite to the right side */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1; /* Ensure it's above other elements */
+    width: 30px;
+    height: 70px;
+    background-color: #33333387;
+    border-top-right-radius: 50px; /* Changed from left to right */
+    border-bottom-right-radius: 50px; /* Changed from left to right */
+  }
+  
+  /* Popup buttons animation */
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%) translateY(-50%) scale(0);
+    }
+  
+    to {
+      transform: translateX(0) translateY(-50%) scale(1);
+    }
+  }
+  @keyframes slideOutLeft {
+    from {
+        transform: translateX(0) translateY(-50%) scale(1);
+    }
+
+    to {
+        transform: translateX(-100%) translateY(-50%) scale(0);
+    }
+}
+  .l-popup-buttons {
+    position: fixed;
+    left: 40px; /* Adjust as needed for the desired distance from the semicircle */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    animation: slideInLeft 0.3s ease;
+  }
+
+  .l-popup-buttons.closing {
+    animation: slideOutLeft 0.3s ease;
+  }
+  

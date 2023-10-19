@@ -64,6 +64,10 @@ body, html {
   background-color: rgba(255, 255, 255, 0.3); /* Transparent white */
   border-radius: 10px; /* Ro15ded corners */
   border: #333; /* Border */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Media query for smaller screens */
@@ -84,3 +88,52 @@ body, html {
   cursor: pointer; /* Change cursor to indicate clickability */
   /* Other styles for the button appearance */
 }
+
+/* .no-main-popup{
+  display: none;
+}
+.main-popup{
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 4;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+
+CSS for MainPopup */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+  width: 80%; /* Adjust the width as needed */
+  max-width: 600px; /* Max width for the popup */
+  aspect-ratio: 3/2 auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Rest of your existing styles */
+
+

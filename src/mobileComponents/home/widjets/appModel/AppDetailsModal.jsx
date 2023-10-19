@@ -33,7 +33,7 @@ const AppDetailsModal = ({ appData, onClose }) => {
       }
     };
   }, []);
-  const abc='messages/message.jsx';
+  // const abc='messages/message.jsx';
   const DynamicComponent = React.lazy(() =>
     import(`../../../appRoutes/${appData.path}`)
   );

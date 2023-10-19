@@ -1,8 +1,62 @@
 /* right.css */
-.side-items{
+.side-items {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 
+}
+
+/* Triangle button styles */
+.triangle-button {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+    /* Ensure it's above other elements */
+    width: 30px;
+    height: 70px;
+    background-color: #33333387;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+
+/* Popup buttons animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%) translateY(-50%) scale(0);
+    }
+
+    to {
+        transform: translateX(0) translateY(-50%) scale(1);
+    }
+}
+
+/* Popup buttons animation to slide out */
+@keyframes slideOut {
+    from {
+        transform: translateX(0) translateY(-50%) scale(1);
+    }
+
+    to {
+        transform: translateX(100%) translateY(-50%) scale(0);
+    }
+}
+
+.popup-buttons {
+    position: fixed;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    animation: slideIn 0.3s ease;
+}
+
+.popup-buttons.closing {
+    animation: slideOut 0.3s ease;
 }
