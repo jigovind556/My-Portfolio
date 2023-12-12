@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My-Portfolio/static/css/main.b49eb361.css",
-    "main.js": "/My-Portfolio/static/js/main.bc0a9f2c.js",
+    "main.css": "/My-Portfolio/static/css/main.023f6881.css",
+    "main.js": "/My-Portfolio/static/js/main.99860a74.js",
     "static/css/310.93b204a9.chunk.css": "/My-Portfolio/static/css/310.93b204a9.chunk.css",
     "static/js/310.24899b8e.chunk.js": "/My-Portfolio/static/js/310.24899b8e.chunk.js",
     "static/css/474.93b204a9.chunk.css": "/My-Portfolio/static/css/474.93b204a9.chunk.css",
@@ -35,12 +35,13 @@
     "static/media/automate-logo.jpg": "/My-Portfolio/static/media/automate-logo.08e1b8384a42eb662bf3.jpg",
     "static/media/leetCode-logo.png": "/My-Portfolio/static/media/leetCode-logo.c79f333b12595d3eec8f.png",
     "static/media/fa-regular-400.woff2": "/My-Portfolio/static/media/fa-regular-400.b041b1fa4fe241b23445.woff2",
+    "static/media/chess-game-logo.png": "/My-Portfolio/static/media/chess-game-logo.889936f528264e3a3c3b.png",
     "static/media/linkedin-logo.png": "/My-Portfolio/static/media/linkedin-logo.f249b38224ca41a0b909.png",
     "static/media/fa-v4compatibility.ttf": "/My-Portfolio/static/media/fa-v4compatibility.c6a0c95b0a95c4553700.ttf",
     "static/media/fa-v4compatibility.woff2": "/My-Portfolio/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
     "index.html": "/My-Portfolio/index.html",
-    "main.b49eb361.css.map": "/My-Portfolio/static/css/main.b49eb361.css.map",
-    "main.bc0a9f2c.js.map": "/My-Portfolio/static/js/main.bc0a9f2c.js.map",
+    "main.023f6881.css.map": "/My-Portfolio/static/css/main.023f6881.css.map",
+    "main.99860a74.js.map": "/My-Portfolio/static/js/main.99860a74.js.map",
     "310.93b204a9.chunk.css.map": "/My-Portfolio/static/css/310.93b204a9.chunk.css.map",
     "310.24899b8e.chunk.js.map": "/My-Portfolio/static/js/310.24899b8e.chunk.js.map",
     "474.93b204a9.chunk.css.map": "/My-Portfolio/static/css/474.93b204a9.chunk.css.map",
@@ -64,7 +65,7 @@
     "787.1f11dfe9.chunk.js.map": "/My-Portfolio/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b49eb361.css",
-    "static/js/main.bc0a9f2c.js"
+    "static/css/main.023f6881.css",
+    "static/js/main.99860a74.js"
   ]
 }
