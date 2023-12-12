@@ -12,7 +12,7 @@ export const appDataList = [
     appName: "About Me",
     icon: "about-me-icon.png",
     description:
-      `This is about me. `,
+      `This is about me. my name is Govind ji `,
     path:'aboutMe/aboutMe.jsx',
     type:'self',
     // ... other properties ...
