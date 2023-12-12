@@ -61,5 +61,14 @@ export const appDataList = [
     src:'https://jigovind556.github.io/Auto-Mate/',
     // ... other properties ...
   },
+  {
+    appName: "Chess",
+    icon: "chess-game-logo.png",
+    description: "Chess Game project.",
+    path:'webroute/webRoute.jsx',
+    type:'web',
+    src:'https://jigovind556.github.io/Chess-Game/',
+    // ... other properties ...
+  },
   
 ];
