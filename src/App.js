@@ -7,6 +7,7 @@ import Center from "./component/main/center";
 import Right from "./component/main/right";
 import "./index.css";
 import usePreventZoom from ".";
+// import { faCircleXmark } from "@fortawesome/free-regular-svg-icons";
 // import MainPopup from "./mainPopup";
 
 function App() {
@@ -67,18 +68,25 @@ const Popup = ({theme,setTheme, children, closePopup }) => {
   );
   return (
     <div className="popup-overlay" onClick={closePopup}>
-      <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+      <div className="popup-content" style={styles.popup} onClick={(e) => e.stopPropagation()}>
         <button className="close-button" onClick={closePopup}>
           Close
         </button>
         <Suspense fallback={<div>Loading...</div>}>
         <>
-          <DynamicComponent theme={theme} setTheme={setTheme} />
+          <DynamicComponent  theme={theme} setTheme={setTheme} />
         </>
       </Suspense>
       </div>
     </div>
   );
 };
+const styles={
+    popup:{
+      display:"flex",
+      justifyContent:"center",
+      alignItems:"center",
+    }
+}
 
 export default App;

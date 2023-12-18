@@ -1,6 +1,10 @@
 // Left.js
 import React, { useEffect, useRef, useState } from "react";
 import "./left.css";
+import First from "../left/first";
+import Second from "../left/second";
+import Third from "../right/third";
+// import {First ,Second ,Third} from "../left";
 
 const Left = (props) => {
   const [screenSize, setScreenSize] = useState("large");
@@ -16,7 +20,7 @@ const Left = (props) => {
         setScreenSize("small");
       }
     }
-
+    checkScreenWidthAndRedirect();
     window.addEventListener("load", checkScreenWidthAndRedirect);
     window.addEventListener("resize", checkScreenWidthAndRedirect);
 
@@ -70,22 +74,22 @@ const Left = (props) => {
     case "large":
       return (
         <div className="side-items">
-          <div className="square-div">{/* Content */}</div>
-          <div className="square-div">{/* Content */}</div>
-          <div className="square-div">{/* Content */}</div>
+          <div className="square-div">{<First/>}</div>
+          <div className="square-div">{<Second/>}</div>
+          <div className="square-div">{<Third/>}</div>
         </div>
       );
     case "medium":
       return (
         <div className="side-items">
           <div className="square-div" onClick={() => handleClick(0)}>
-            <Rbutton content={"first"} />
+            <Rbutton content={"Facet"} />
           </div>
           <div className="square-div" onClick={() => handleClick(1)}>
-            <Rbutton content={"second"} />
+            <Rbutton content={<Second/>} />
           </div>
           <div className="square-div" onClick={() => handleClick(2)}>
-            <Rbutton content={"third"} />
+            <Rbutton content={<Third/>} />
           </div>
         </div>
       );

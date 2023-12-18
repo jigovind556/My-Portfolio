@@ -19,7 +19,7 @@ const Right = (props) => {
         setScreenSize("small");
       }
     }
-
+    checkScreenWidthAndRedirect();
     window.addEventListener("load", checkScreenWidthAndRedirect);
     window.addEventListener("resize", checkScreenWidthAndRedirect);
 

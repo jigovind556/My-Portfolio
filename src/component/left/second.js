@@ -1,6 +1,6 @@
 import React from 'react';
 
-const second = () => {
+const Second = () => {
   return (
     <>
       Left Second
@@ -8,4 +8,4 @@ const second = () => {
   );
 }
 
-export default second;
+export default Second;
