@@ -1,0 +1,18 @@
+I have made a portfolio website which contain three sections 
+- left (have three section )
+           + first -> my name and my properties(web developer, android developer, problem solver) changing every second 
+           + second -> to be developed 
+           + third -> to be developed 
+
+- central ( main section)
+        + is a mobile which has apps(which are my projects) - camera app ,message app, about me ,github website link, linkedin website link, leet code website link, my automate project link, chess app .
+        + these apps are of three types 
+                     *  included in the own website (camera app ,messaging app,et.c)
+                     *  my own website but hosted elsewhere (automate,chess game,et.c)
+                     *  other website (e.g. github ,leetcode ,et.c)
+        + all these three types of app when clicked get opened the mobile screen (i.e. central section)
+
+- right (have three section)
+        + first -> time and date (updating every second)
+        + second -> color pallete with 6 options (can be used to change the theme of whole website)
+        + third -> to be developed 

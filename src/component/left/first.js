@@ -49,6 +49,7 @@ const styles = {
     fontSize: '1.2em',
     opacity: 0.8,
     transition: 'opacity 0.5s ease-in-out',
+    color : "white"
   },
 };
 
