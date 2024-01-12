@@ -1,0 +1,40 @@
+/* second.module.css */
+
+.heading {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.elements {
+  display: flex;
+}
+
+.element {
+  animation: slideInLeft 1s ease, slideOutRight 1s ease 2s; /* Use separate animations for in and out */
+  /* opacity: 0;
+  white-space: nowrap; */
+}
+
+/* .visible {
+  opacity: 1;
+} */
+
+@keyframes slideInLeft {
+  from {
+      transform: translateX(-100%);
+  }
+
+  to {
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+      transform: translateX(0);
+  }
+
+  to {
+      transform: translateX(100%);
+  }
+}
