@@ -4,10 +4,16 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+  display : flex ;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .heading {
   margin: 0;
   font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -26,7 +32,11 @@
 }
 .element {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.projectlogo{
+  width:30%;
+}

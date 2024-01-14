@@ -1,6 +1,4 @@
-import React, { useContext, useState } from "react";
-import ThemeContext from "../../context/ThemeContext";
-import styled, { ThemeProvider } from "styled-components";
+import React, { useState } from "react";
 import "./mobileScreen.css";
 import Home from "../../mobileComponents/home/home";
 import TopDrawer from "../../mobileComponents/home/TopDrawer";
@@ -24,27 +22,27 @@ const MobileScreen = () => {
   };
   return (
     <div className="background-image">
-      <ThemeProvider theme={theme}>
-        <MobileContainer className={`mobile-screen ${theme}`}>
+        <div className={`mobile-screen ${theme}`} style={{
+            background: `linear-gradient(to left, ${theme.primary}, ${theme.secondary})`
+          }}>
           {/* <div className="border-image"></div> */}
           <div className="screen-content">
             <TopDrawer />
             <div className="app-content">{renderComponent()}</div>
           </div>
-        </MobileContainer>
-      </ThemeProvider>
+        </div>
     </div>
   );
 };
 
-const MobileContainer = styled.div`
-  background: linear-gradient(
-    to left,
-    ${(props) => props.theme.primary},
-    ${(props) => props.theme.secondary}
-  );
-  /* Other mobile screen styles */
-`;
+// const MobileContainer = styled.div`
+//   background: linear-gradient(
+//     to left,
+//     ${(props) => props.theme.primary},
+//     ${(props) => props.theme.secondary}
+//   );
+//   /* Other mobile screen styles */
+// `;
 
 export default MobileScreen;
 

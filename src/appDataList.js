@@ -10,7 +10,7 @@ export const appDataList = [
   },
   {
     appName: "About Me",
-    icon: "about-me-icon.png",
+    icon: "about-me-logo.png",
     description:
       `This is about me. my name is Govind ji `,
     path:'aboutMe/aboutMe.jsx',
@@ -54,7 +54,7 @@ export const appDataList = [
   },
   {
     appName: "Auto-Mate",
-    icon: "automate-logo.jpg",
+    icon: "automate-logo.png",
     description: "Auto mate project.",
     path:'webroute/webRoute.jsx',
     type:'web',

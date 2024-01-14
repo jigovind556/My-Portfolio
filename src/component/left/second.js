@@ -2,9 +2,10 @@
 
 import React, { useEffect, useState } from 'react';
 import styles from './second.module.css';
+import { data } from '../../info/credential';
 
 const Second = () => {
-  const elements = ['first', 'second', 'third', 'fourth'];
+  const elements = data.projects;
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -19,19 +20,14 @@ const Second = () => {
     <div className={styles.container}>
       <div className={styles.heading}>projects</div>
       <div className={styles.elements} style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
-        
-          {elements.map((item, index) => (
-            // <div
-            //   key={index}
-            //   style={{ background: `url('${item.image}') no-repeat center center` }}
-            // >
-            <div key={index} className={styles.slide}>
-              
-              {projectElement(item)}
-            
-            </div>
-            // </div>
-          ))}
+
+        {elements.map((item, index) => (
+          <div key={index} className={styles.slide}>
+
+            {projectElement(item)}
+
+          </div>
+        ))}
       </div>
     </div>
   );
@@ -40,9 +36,13 @@ const Second = () => {
 export default Second;
 
 const projectElement = (data) => {
+  // console.log(data);
   return (
-    <div className={styles.element}>
-      {data}
-    </div>
+    <a href={data.git} target='blank'>
+      <div className={styles.element}>
+        <img className={styles.projectlogo} src={data.image} alt="project-icon" />
+        {data.name}
+      </div>
+    </a>
   )
 }

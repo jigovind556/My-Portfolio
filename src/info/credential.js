@@ -1,4 +1,8 @@
-
+import chessimg from "../images/chess-game-logo.png";
+import automateimg from "../images/automate-logo.png";
+import timetrackerimg from "../images/time-tracker-icon.png";
+import tictactoeimg from "../images/tic-tac-toe-logo.png";
+import ludoimg from "../images/ludo-logo.png";
 export const data = {
     name: "Govind Ji",
     dob: "08-12-2003",
@@ -103,7 +107,7 @@ export const data = {
     projects: [
         {
             name: "Auto-Mate",
-            image: "/images/projects/automate.png",
+            image: automateimg,
             duration: "January 2023",
             type: "full stack web app",
             short_desc: "A web app that help users to save money on travel cost",
@@ -119,7 +123,7 @@ export const data = {
         },
         {
             name: "Time Tracker",
-            image: "",
+            image: timetrackerimg,
             duration: "july 2023",
             type: "mobile application",
             short_desc: "An Android app addressing attendance tracking issues for college students.",
@@ -134,7 +138,7 @@ export const data = {
         },
         {
             name: "Up Time",
-            image: "",
+            image: timetrackerimg,
             duration: "July 2022 - September 2022",
             type: "web application",
             short_desc: "A web application focused on database management for student attendance monitoring.",
@@ -147,7 +151,7 @@ export const data = {
         },
         {
             name: "Tic Tac Toe",
-            image: "",
+            image: tictactoeimg,
             duration: "October 2022",
             type: "Game",
             short_desc: "Java Swing based game",
@@ -160,7 +164,7 @@ export const data = {
         },
         {
             name: "Chess",
-            image: "",
+            image: chessimg,
             duration: "October 2023",
             type: "Game",
             short_desc: "React Js based game",
@@ -173,7 +177,7 @@ export const data = {
         },
         {
             name: "Ludo",
-            image: "",
+            image: ludoimg,
             duration: "November 2022",
             type: "Game",
             short_desc: "Java Swing based game",
