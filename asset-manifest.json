@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My-Portfolio/static/css/main.b59a96db.css",
-    "main.js": "/My-Portfolio/static/js/main.02d1f23e.js",
+    "main.css": "/My-Portfolio/static/css/main.af272d97.css",
+    "main.js": "/My-Portfolio/static/js/main.a026f68e.js",
     "static/css/310.93b204a9.chunk.css": "/My-Portfolio/static/css/310.93b204a9.chunk.css",
     "static/js/310.24899b8e.chunk.js": "/My-Portfolio/static/js/310.24899b8e.chunk.js",
     "static/css/474.93b204a9.chunk.css": "/My-Portfolio/static/css/474.93b204a9.chunk.css",
@@ -25,21 +25,26 @@
     "static/media/phoneScreen2.png": "/My-Portfolio/static/media/phoneScreen2.58152c2cf77bc25757d4.png",
     "static/media/camera-icon.png": "/My-Portfolio/static/media/camera-icon.e2c49e5fb8784a053ee1.png",
     "static/media/fa-solid-900.ttf": "/My-Portfolio/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
+    "static/media/automate-logo.png": "/My-Portfolio/static/media/automate-logo.b142dd14c9ab85d9bdcc.png",
+    "static/media/ludo-logo.png": "/My-Portfolio/static/media/ludo-logo.e50198672bdf2c3b0c66.png",
     "static/media/fa-brands-400.ttf": "/My-Portfolio/static/media/fa-brands-400.016b4a6cdced82ab3aa1.ttf",
+    "static/media/time-tracker-icon.png": "/My-Portfolio/static/media/time-tracker-icon.4b7e6e8f7b3129176353.png",
+    "static/media/about-me-logo.png": "/My-Portfolio/static/media/about-me-logo.c0eb6ce70535d9774ac9.png",
     "static/media/fa-solid-900.woff2": "/My-Portfolio/static/media/fa-solid-900.b6879d41b0852f01ed5b.woff2",
     "static/media/waving-hand.png": "/My-Portfolio/static/media/waving-hand.d26a006ba50f55012b5d.png",
     "static/media/fa-brands-400.woff2": "/My-Portfolio/static/media/fa-brands-400.878f31251d960bd6266f.woff2",
+    "static/media/tic-tac-toe-logo.png": "/My-Portfolio/static/media/tic-tac-toe-logo.21e1cc306076b6689897.png",
     "static/media/fa-regular-400.ttf": "/My-Portfolio/static/media/fa-regular-400.50701fbb8177c2dde530.ttf",
     "static/media/automate-logo.jpg": "/My-Portfolio/static/media/automate-logo.08e1b8384a42eb662bf3.jpg",
     "static/media/leetCode-logo.png": "/My-Portfolio/static/media/leetCode-logo.c79f333b12595d3eec8f.png",
     "static/media/fa-regular-400.woff2": "/My-Portfolio/static/media/fa-regular-400.b041b1fa4fe241b23445.woff2",
-    "static/media/chess-game-logo.png": "/My-Portfolio/static/media/chess-game-logo.889936f528264e3a3c3b.png",
+    "static/media/chess-game-logo.png": "/My-Portfolio/static/media/chess-game-logo.248702d527c47289eef2.png",
     "static/media/linkedin-logo.png": "/My-Portfolio/static/media/linkedin-logo.f249b38224ca41a0b909.png",
     "static/media/fa-v4compatibility.ttf": "/My-Portfolio/static/media/fa-v4compatibility.c6a0c95b0a95c4553700.ttf",
     "static/media/fa-v4compatibility.woff2": "/My-Portfolio/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
     "index.html": "/My-Portfolio/index.html",
-    "main.b59a96db.css.map": "/My-Portfolio/static/css/main.b59a96db.css.map",
-    "main.02d1f23e.js.map": "/My-Portfolio/static/js/main.02d1f23e.js.map",
+    "main.af272d97.css.map": "/My-Portfolio/static/css/main.af272d97.css.map",
+    "main.a026f68e.js.map": "/My-Portfolio/static/js/main.a026f68e.js.map",
     "310.93b204a9.chunk.css.map": "/My-Portfolio/static/css/310.93b204a9.chunk.css.map",
     "310.24899b8e.chunk.js.map": "/My-Portfolio/static/js/310.24899b8e.chunk.js.map",
     "474.93b204a9.chunk.css.map": "/My-Portfolio/static/css/474.93b204a9.chunk.css.map",
@@ -61,7 +66,7 @@
     "787.1f11dfe9.chunk.js.map": "/My-Portfolio/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b59a96db.css",
-    "static/js/main.02d1f23e.js"
+    "static/css/main.af272d97.css",
+    "static/js/main.a026f68e.js"
   ]
 }
