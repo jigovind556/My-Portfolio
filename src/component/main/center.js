@@ -4,7 +4,7 @@ import MobileScreen from '../center/mobileScreen';
 const Center = (props) => {
   return (
     <div>
-      <MobileScreen theme={props.theme}/>
+      <MobileScreen />
     </div>
   );
 }

@@ -25,6 +25,10 @@ Welcome to my portfolio website! This project showcases my skills, experience, a
 - Suspense: React feature for lazy loading components.
 - FontAwesome: Icons used for theme toggle and action buttons.
 
+## Demo
+
+[Link to live demo](https://jigovind556.github.io/My-Portfolio/)
+
 ## Contact
 
 Connect with me on [LinkedIn](https://www.linkedin.com/in/govindji) and explore my projects on [GitHub](https://github.com/jigovind556).

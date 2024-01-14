@@ -4,10 +4,12 @@ import "./right.css";
 import ColorPicker from "../right/colorPicker";
 import ShowTime from "../right/showTime";
 import Third from "../right/third";
+import usePopup from "../../context/popup";
 
 const Right = (props) => {
   const [screenSize, setScreenSize] = useState("large");
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const {openPopup}= usePopup();
   const autoCloseTimeout = useRef(null);
   useEffect(() => {
     function checkScreenWidthAndRedirect() {
@@ -52,7 +54,7 @@ const Right = (props) => {
   const handleClick = (comp) => {
     // console.log("Component opened: " + comp);
     const components = ["showTime", "colorPicker", "third"];
-    props.openPopup(`right/${components[comp]}`);
+    openPopup(`right/${components[comp]}`);
   };
 
   const handleTriangleClick = () => {

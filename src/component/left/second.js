@@ -1,8 +1,6 @@
 // second.js
 
 import React, { useEffect, useState } from 'react';
-import Slider from 'react-animated-slider';
-import 'react-animated-slider/build/horizontal.css';
 import styles from './second.module.css';
 
 const Second = () => {
@@ -20,22 +18,20 @@ const Second = () => {
   return (
     <div className={styles.container}>
       <div className={styles.heading}>projects</div>
-      <div className={styles.elements}>
-      <Slider autoplay={3000}>
-        {elements.map((item, index) => (
-          // <div
-          //   key={index}
-          //   style={{ background: `url('${item.image}') no-repeat center center` }}
-          // >
-            <div className="center">
-              {item}
-              {/* <h1>{item.title}</h1>
-              <p>{item.description}</p>
-              <button>{item.button}</button> */}
+      <div className={styles.elements} style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
+        
+          {elements.map((item, index) => (
+            // <div
+            //   key={index}
+            //   style={{ background: `url('${item.image}') no-repeat center center` }}
+            // >
+            <div key={index} className={styles.slide}>
+              
+              {projectElement(item)}
+            
             </div>
-          // </div>
-        ))}
-      </Slider>
+            // </div>
+          ))}
       </div>
     </div>
   );
@@ -43,8 +39,8 @@ const Second = () => {
 
 export default Second;
 
-const projectElement=(data)=>{
-  return(
+const projectElement = (data) => {
+  return (
     <div className={styles.element}>
       {data}
     </div>

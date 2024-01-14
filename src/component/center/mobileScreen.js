@@ -1,16 +1,17 @@
 import React, { useContext, useState } from "react";
-import ThemeContext from "../../ThemeContext";
+import ThemeContext from "../../context/ThemeContext";
 import styled, { ThemeProvider } from "styled-components";
 import "./mobileScreen.css";
 import Home from "../../mobileComponents/home/home";
 import TopDrawer from "../../mobileComponents/home/TopDrawer";
 import { appDataList } from "../../appDataList";
 import AppDetailsModal from "../../mobileComponents/home/widjets/appModel/AppDetailsModal";
+import useTheme from "../../context/ThemeContext";
 
 const MobileScreen = () => {
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useTheme();
   const [routenum, setRoutenum] = useState(0);
-  const onClose=()=>{
+  const onClose = () => {
     setRoutenum(0);
   }
   const renderComponent = () => {

@@ -4,11 +4,13 @@ import "./left.css";
 import First from "../left/first";
 import Second from "../left/second";
 import Third from "../right/third";
+import usePopup from "../../context/popup";
 // import {First ,Second ,Third} from "../left";
 
 const Left = (props) => {
   const [screenSize, setScreenSize] = useState("large");
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const {openPopup}= usePopup();
   const autoCloseTimeout=useRef(null);
   useEffect(() => {
     function checkScreenWidthAndRedirect() {
@@ -52,7 +54,7 @@ const Left = (props) => {
   const handleClick = (comp) => {
     console.log("Component opened: " + comp);
     const components = ["first", "second", "third"];
-    props.openPopup(`left/${components[comp]}`);
+    openPopup(`left/${components[comp]}`);
   };
 
   const handleTriangleClick = () => {
@@ -86,7 +88,7 @@ const Left = (props) => {
             <Rbutton content={"Facet"} />
           </div>
           <div className="square-div" onClick={() => handleClick(1)}>
-            <Rbutton content={<Second/>} />
+            <Rbutton content={"Projects"} />
           </div>
           <div className="square-div" onClick={() => handleClick(2)}>
             <Rbutton content={<Third/>} />

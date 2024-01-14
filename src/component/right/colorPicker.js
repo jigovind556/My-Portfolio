@@ -1,10 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import ThemeContext from "../../context/ThemeContext";
+import useTheme from "../../context/ThemeContext";
 
 const ColorPicker = (props) => {
+  const { theme, setTheme }= useTheme();
   const handleColorChange = (color) => {
-    props.setTheme({
-      ...props.theme,
+    setTheme({
+      ...theme,
       primary: color,
     });
   };
@@ -20,9 +23,9 @@ const ColorPicker = (props) => {
 
   return (
     <ColorPickerContainer>
-      {colorOptions.map((color) => (
+      {colorOptions.map((color,index) => (
         <ColorButton
-          key={color}
+          key={index}
           style={{ backgroundColor: color }}
           onClick={() => handleColorChange(color)}
         />
